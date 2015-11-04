@@ -11,7 +11,8 @@ public class ZadT05 {
             t[i] = (int)(Math.random() * 10);
 
         for (int i = 0; i < l; i++)
-            System.out.println(t[i]);
+            System.out.print(t[i] + " ");
+        System.out.println();
 
         System.out.println("odwrotnie:");
 
@@ -19,7 +20,8 @@ public class ZadT05 {
             t2[l-i-1] = t[i];
 
         for (int i = 0; i < l; i++)
-            System.out.println(t2[i]);
+            System.out.print(t2[i] + " ");
+        System.out.println();
         
     }
 

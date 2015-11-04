@@ -10,7 +10,8 @@ public class ZadT10 {
             t[i] = (int)(Math.random() * m);
 
         for (int i = 0; i < l; i++)
-            System.out.println(t[i]);
+            System.out.print(t[i] + " ");
+        System.out.println();
 
         int[] w = new int[m];
         for (int i = 0; i < m; i++) w[i] = 0;

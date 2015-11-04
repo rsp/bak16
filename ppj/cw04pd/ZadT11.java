@@ -27,6 +27,7 @@ public class ZadT11 {
 
         for (int i = 0; i < l; i++)
             System.out.print(t[i] + " ");
+        System.out.println();
 
     }
 

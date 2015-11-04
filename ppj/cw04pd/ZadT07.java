@@ -11,8 +11,17 @@ public class ZadT07 {
             t2[i] = (int)(Math.random() * 10);
         }
 
+        for (int i = 0; i < t1.length; i++)
+            System.out.format("%3d", t1[i]);
+        System.out.println();
+
+        for (int i = 0; i < t2.length; i++)
+            System.out.format("%3d", t2[i]);
+        System.out.println();
+
         for (int i = 0; i < l; i++)
-            System.out.println(t1[i] * t2[i]);
+            System.out.format("%3d", t1[i] * t2[i]);
+        System.out.println();
 
     }
 

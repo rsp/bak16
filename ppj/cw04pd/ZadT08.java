@@ -26,7 +26,9 @@ public class ZadT08 {
 
         for (int j = 0; j < tt.length; j++)
             for (int i = 0; i < tt[j].length; i++)
-                System.out.println(tt[j][i]);
+                System.out.print(tt[j][i] + " ");
+
+        System.out.println();
 
     }
 

@@ -11,7 +11,8 @@ public class ZadT06 {
             t[i] = (int)(Math.random() * 10);
 
         for (int i = 0; i < l; i++)
-            System.out.println(t[i]);
+            System.out.print(t[i] + " ");
+        System.out.println();
 
         System.out.println("nieparzyste:");
 
@@ -24,7 +25,8 @@ public class ZadT06 {
             if (t[i] % 2 != 0) t2[j++] = t[i];
 
         for (int i = 0; i < n; i++)
-            System.out.println(t2[i]);
+            System.out.print(t2[i] + " ");
+        System.out.println();
         
     }
 
