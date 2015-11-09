@@ -5,8 +5,8 @@ public class Zad5a {
         int m = 10;
 
         for (int j = -m; j <= m; j++) {
-            for (int i = 0; i < m+Math.abs(j)+1; i++)
-                System.out.print(Math.abs(j) < m-i ? " " : "*");
+            for (int i = 0; i < Math.abs(j)+m+1; i++)
+                System.out.print(m-i > Math.abs(j) ? " " : "*");
             System.out.println();
         }
 
