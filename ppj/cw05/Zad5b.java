@@ -2,7 +2,7 @@ public class Zad5b {
 
     public static void main(String[] args) {
 
-        int m = 10;
+        int m = 3;
 
         for (int j = 0; j <= 2*m; j++) {
             for (int i = 0; i <= 2*m; i++)

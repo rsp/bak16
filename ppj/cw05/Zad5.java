@@ -2,7 +2,7 @@ public class Zad5 {
 
     public static void main(String[] args) {
 
-        int m = 5;
+        int m = 3;
 
         for (int j = -m; j <= m; j++) {
             for (int i = 0; i < m-Math.abs(j); i++)
