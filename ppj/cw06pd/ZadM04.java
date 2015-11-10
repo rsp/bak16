@@ -6,9 +6,12 @@ public class ZadM04 {
               t2 = {10,20,30,40,50,60,70,80},
               t3 = {100,200,300,400,500,600,700};
         
-        int[][] tt = {t1, t2, t3};
+        int[][][] tt = {{t1, t2, t3}, {t3, t2}, {t2, t1}};
 
-        printInts2D(tt);
+        for (int i = 0; i < tt.length; i++) {
+            printInts2D(tt[i]);
+            System.out.println();
+        }
 
     }
 
