@@ -1,6 +1,6 @@
 import java.text.DecimalFormat;
 
-public class ZadM1 {
+public class ZadM01 {
 
     public static void main(String[] args) {
 

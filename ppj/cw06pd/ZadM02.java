@@ -1,4 +1,4 @@
-public class ZadM2 {
+public class ZadM02 {
 
     public static void main(String[] args) {
 
