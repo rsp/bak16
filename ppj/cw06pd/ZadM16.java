@@ -14,15 +14,14 @@ public class ZadM16 {
 
     static int[] even(int[] t) {
         int i, j;
-        int[] p = new int[t.length];
         for (i=j=0; i < t.length; i++)
-            if (t[i] % 2 == 0) p[j++] = t[i];
+            if (t[i] % 2 == 0) j++;
         int[] r = new int[j];
-        for (i = 0; i < j; i++) 
-            r[i] = p[i];
+        for (i=j=0; i < t.length; i++)
+            if (t[i] % 2 == 0) r[j++] = t[i];
         return r;
     }
-        
+
     static void printInts(int[] t) {
         for (int i = 0; i < t.length; i++)
             System.out.print(t[i] + " ");
