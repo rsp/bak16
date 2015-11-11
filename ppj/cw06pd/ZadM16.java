@@ -6,13 +6,13 @@ public class ZadM16 {
 
         printInts(t);
 
-        int[] p = filter(t);
+        int[] p = even(t);
 
         printInts(p);
 
     }
 
-    static int[] filter(int[] t) {
+    static int[] even(int[] t) {
         int i, j;
         int[] p = new int[t.length];
         for (i=j=0; i < t.length; i++)
@@ -25,7 +25,7 @@ public class ZadM16 {
         
     static void printInts(int[] t) {
         for (int i = 0; i < t.length; i++)
-            System.out.format("%3d", t[i]);
+            System.out.print(t[i] + " ");
         System.out.println();
     }
 
