@@ -5,7 +5,7 @@ public class ZadM10 {
         char[] t = {'a', ' ', ',', '-', 'x'};
 
         for (int i = 0; i < t.length; i++)
-            System.out.println(t[i] + (test(t[i]) ? " tak" : " nie"));
+            System.out.format("[%s] %s\n", t[i], test(t[i]));
 
     }
 
