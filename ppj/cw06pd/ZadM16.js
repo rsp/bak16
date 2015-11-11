@@ -9,7 +9,7 @@ printInts(p);
 function even(t) {
     return t.filter(x => x % 2 == 0);
 }
-    
+
 function printInts(t) {
     console.log(t.join(' '));
 }
