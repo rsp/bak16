@@ -14,6 +14,7 @@ public class ZadM19 {
 
         for (int i = 0; i < t.length; i++)
             System.out.format("\"%s\" %d\n", t[i], words(t[i]));
+
     }
 
 }
