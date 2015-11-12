@@ -6,13 +6,13 @@ public class ZadM20 {
         System.out.println();
     }
 
-    static void bubble(int[] t) {
+    static void bubble(int[] t, int o) {
 
         int s, c = -1, l = t.length;
         for (int j = 0; j < l-1 && c != 0; j++) {
             c = 0;
             for (int i = 0; i < l-j-1; i++)
-                if (t[i] > t[i+1]) {
+                if (o*(t[i]-t[i+1]) > 0) {
                     s = t[i];
                     t[i] = t[i+1];
                     t[i+1] = s;
@@ -37,8 +37,8 @@ public class ZadM20 {
             if (t[i] % 2 == 1) o[oi++] = t[i];
         }
 
-        bubble(e);
-        bubble(o);
+        bubble(e, 1);
+        bubble(o,-1);
 
         for (i=ei=oi=0; i < l; i++)
             r[i] = t[i] % 2 == 0 ? e[ei++] : o[oi++];
