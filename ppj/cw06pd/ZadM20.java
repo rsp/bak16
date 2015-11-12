@@ -34,7 +34,7 @@ public class ZadM20 {
 
         for (i=ei=oi=0; i < l; i++) {
             if (t[i] % 2 == 0) e[ei++] = t[i];
-            if (t[i] % 2 == 1) o[oi++] = t[i];
+            else o[oi++] = t[i];
         }
 
         bubble(e, 1);
