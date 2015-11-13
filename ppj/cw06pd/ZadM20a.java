@@ -6,21 +6,6 @@ public class ZadM20a {
         System.out.println();
     }
 
-    static void bubble(int[] t, int o) {
-
-        int s, c = -1, l = t.length;
-        for (int j = 0; j < l-1 && c != 0; j++) {
-            c = 0;
-            for (int i = 0; i < l-j-1; i++)
-                if (o*(t[i]-t[i+1]) > 0) {
-                    s = t[i];
-                    t[i] = t[i+1];
-                    t[i+1] = s;
-                    c++;
-                }
-        }
-    }
-
     static void eosort(int[] t) {
 
         int i, ei, oi, l = t.length;
@@ -37,8 +22,13 @@ public class ZadM20a {
             else o[oi++] = t[i];
         }
 
-        bubble(e, 1);
-        bubble(o,-1);
+        java.util.Arrays.sort(e);
+        java.util.Arrays.sort(o);
+        for(i = 0; i < o.length/2; i++) {
+            int s = o[i];
+            o[i] = o[o.length-i-1];
+            o[o.length-i-1] = s;
+        }
 
         for (i=ei=oi=0; i < l; i++)
             r[i] = t[i] % 2 == 0 ? e[ei++] : o[oi++];
