@@ -24,10 +24,10 @@ public class ZadM20a {
 
         java.util.Arrays.sort(e);
         java.util.Arrays.sort(o);
-        for(i = 0; i < o.length/2; i++) {
+        for(i = 0, oi=o.length; i < oi/2; i++) {
             int s = o[i];
-            o[i] = o[o.length-i-1];
-            o[o.length-i-1] = s;
+            o[i] = o[oi-i-1];
+            o[oi-i-1] = s;
         }
 
         for (i=ei=oi=0; i < l; i++)
