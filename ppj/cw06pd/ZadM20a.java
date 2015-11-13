@@ -8,9 +8,9 @@ public class ZadM20a {
 
     static void eosort(int[] t) {
 
-        int i, ei, oi, l = t.length;
-
         printInts(t);
+
+        int i, ei, oi, l = t.length;
 
         for (i=ei=0; i < l; i++)
             if (t[i] % 2 == 0) ei++;
