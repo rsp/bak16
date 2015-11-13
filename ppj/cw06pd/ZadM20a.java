@@ -15,7 +15,9 @@ public class ZadM20a {
         for (i=ei=0; i < l; i++)
             if (t[i] % 2 == 0) ei++;
 
-        int[] r = new int[l], e = new int[ei], o = new int[l-ei];
+        int[] r = new int[l],
+              e = new int[ei],
+              o = new int[l-ei];
 
         for (i=ei=oi=0; i < l; i++) {
             if (t[i] % 2 == 0) e[ei++] = t[i];
