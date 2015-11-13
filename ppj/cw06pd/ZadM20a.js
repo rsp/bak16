@@ -11,7 +11,6 @@ function eosort(t) {
         i = [0,0], r = t.map(x => b[x%2][i[x%2]++]);
 
     printInts(r);
-    console.log();
 
 }
 

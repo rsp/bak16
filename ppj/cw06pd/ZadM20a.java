@@ -34,7 +34,6 @@ public class ZadM20a {
             r[i] = t[i] % 2 == 0 ? e[ei++] : o[oi++];
 
         printInts(r);
-        System.out.println();
 
     }
 
