@@ -10,15 +10,17 @@ public class ZadM05 {
 
         for (int i = 0; i < tt.length; i++) {
             printInts(tt[i]);
-            System.out.println("   suma = " + suma(tt[i])); 
+            System.out.println("   suma = " + suma(tt[i]));
         }
 
     }
 
     static int suma(int[] t) {
-        int s = 0;
-        for (int i = 0; i < t.length; i++) s+= t[i];
-        return s;
+        return suma(t, 0, 0);
+    }
+
+    static int suma(int[] t, int i, int s) {
+        return i < t.length ? suma(t, i+1, s+t[i]) : s;
     }
 
     static void printInts(int[] t) {
