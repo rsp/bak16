@@ -2,8 +2,14 @@ public class ZadM06 {
 
     public static void main(String[] args) {
 
-        for (int i = 0; i < 20; i+=5)
-            System.out.format("randMax(%d): %d\n", i, randMax(i));
+        int[] t = {0,1,2,5,10,20};
+
+        for (int i = 0; i < t.length; i++) {
+            System.out.format("randMax(%d):", t[i]);
+            for (int j = 0; j < 20; j++)
+                System.out.format(" %d", randMax(t[i]));
+            System.out.println();
+        }
 
     }
 
