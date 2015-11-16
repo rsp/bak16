@@ -1,5 +1,13 @@
 public class ZadM04 {
 
+    static void printInts2D(int[][] t) {
+        for (int j = 0; j < t.length; j++) {
+            for (int i = 0; i < t[j].length; i++)
+                System.out.format("%4d", t[j][i]);
+            System.out.println();
+        }
+    }
+
     public static void main(String[] args) {
 
         int[] t1 = {1,2,3,4,5,6,7,8},
@@ -13,14 +21,6 @@ public class ZadM04 {
             System.out.println();
         }
 
-    }
-
-    static void printInts2D(int[][] t) {
-        for (int j = 0; j < t.length; j++) {
-            for (int i = 0; i < t[j].length; i++)
-                System.out.format("%4d", t[j][i]);
-            System.out.println();
-        }
     }
 
 }

@@ -1,5 +1,18 @@
 public class ZadM05 {
 
+    static int suma(int[] t) {
+        return suma(t, 0, 0);
+    }
+
+    static int suma(int[] t, int i, int s) {
+        return i < t.length ? suma(t, i+1, s+t[i]) : s;
+    }
+
+    static void printInts(int[] t) {
+        for (int i = 0; i < t.length; i++)
+            System.out.format("%4d", t[i]);
+    }
+
     public static void main(String[] args) {
 
         System.out.println();
@@ -13,19 +26,6 @@ public class ZadM05 {
             System.out.println("   suma = " + suma(tt[i]));
         }
 
-    }
-
-    static int suma(int[] t) {
-        return suma(t, 0, 0);
-    }
-
-    static int suma(int[] t, int i, int s) {
-        return i < t.length ? suma(t, i+1, s+t[i]) : s;
-    }
-
-    static void printInts(int[] t) {
-        for (int i = 0; i < t.length; i++)
-            System.out.format("%4d", t[i]);
     }
 
 }

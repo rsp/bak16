@@ -1,12 +1,5 @@
 public class ZadM07 {
 
-    public static void main(String[] args) {
-
-        for (int i = 0; i < 20; i+=5)
-            printInts(randInts(i));
-
-    }
-
     static int[] randInts(int l) {
 
         int[] t = new int[l];
@@ -20,6 +13,13 @@ public class ZadM07 {
         for (int i = 0; i < t.length; i++)
             System.out.format("%d ", t[i]);
         System.out.println();
+    }
+
+    public static void main(String[] args) {
+
+        for (int i = 0; i < 20; i+=5)
+            printInts(randInts(i));
+
     }
 
 }

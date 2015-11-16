@@ -2,14 +2,6 @@ import java.text.DecimalFormat;
 
 public class ZadM01 {
 
-    public static void main(String[] args) {
-
-        solve(1, -2,  1);
-        solve(1, -1, -2);
-        solve(1,  0,  1);
-
-    }
-
     static void solve(double a, double b, double c) {
 
         System.out.format("%sx\u00B2%sx%s=0 - ", f(a), g(b), g(c));
@@ -39,6 +31,14 @@ public class ZadM01 {
 
     static String f(double x) {
         return new DecimalFormat("0.######").format(x);
+    }
+
+    public static void main(String[] args) {
+
+        solve(1, -2,  1);
+        solve(1, -1, -2);
+        solve(1,  0,  1);
+
     }
 
 }

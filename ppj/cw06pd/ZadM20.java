@@ -1,26 +1,5 @@
 public class ZadM20 {
 
-    static void printInts(int[] t) {
-        for (int i = 0; i < t.length; i++)
-            System.out.print(t[i] + " ");
-        System.out.println();
-    }
-
-    static void bubble(int[] t, int o) {
-
-        int s, c = -1, l = t.length;
-        for (int j = 0; j < l-1 && c != 0; j++) {
-            c = 0;
-            for (int i = 0; i < l-j-1; i++)
-                if (o*(t[i]-t[i+1]) > 0) {
-                    s = t[i];
-                    t[i] = t[i+1];
-                    t[i+1] = s;
-                    c++;
-                }
-        }
-    }
-
     static void eosort(int[] t) {
 
         int i, ei, oi, l = t.length;
@@ -46,6 +25,27 @@ public class ZadM20 {
         printInts(r);
         System.out.println();
 
+    }
+
+    static void bubble(int[] t, int o) {
+
+        int s, c = -1, l = t.length;
+        for (int j = 0; j < l-1 && c != 0; j++) {
+            c = 0;
+            for (int i = 0; i < l-j-1; i++)
+                if (o*(t[i]-t[i+1]) > 0) {
+                    s = t[i];
+                    t[i] = t[i+1];
+                    t[i+1] = s;
+                    c++;
+                }
+        }
+    }
+
+    static void printInts(int[] t) {
+        for (int i = 0; i < t.length; i++)
+            System.out.print(t[i] + " ");
+        System.out.println();
     }
 
     public static void main(String[] args) {

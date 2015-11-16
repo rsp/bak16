@@ -1,5 +1,9 @@
 public class ZadM06 {
 
+    static int randMax(int m) {
+        return (int)(Math.random()*(m+1));
+    }
+
     public static void main(String[] args) {
 
         int[] t = {0,1,2,5,10,20};
@@ -11,10 +15,6 @@ public class ZadM06 {
             System.out.println();
         }
 
-    }
-
-    static int randMax(int m) {
-        return (int)(Math.random()*(m+1));
     }
 
 }

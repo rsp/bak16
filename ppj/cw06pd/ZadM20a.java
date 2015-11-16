@@ -1,11 +1,5 @@
 public class ZadM20a {
 
-    static void printInts(int[] t) {
-        for (int i = 0; i < t.length; i++)
-            System.out.print(t[i] + " ");
-        System.out.println();
-    }
-
     static void eosort(int[] t) {
 
         printInts(t);
@@ -37,6 +31,12 @@ public class ZadM20a {
 
         printInts(r);
 
+    }
+
+    static void printInts(int[] t) {
+        for (int i = 0; i < t.length; i++)
+            System.out.print(t[i] + " ");
+        System.out.println();
     }
 
     public static void main(String[] args) {

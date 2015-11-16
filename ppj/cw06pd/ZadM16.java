@@ -1,11 +1,5 @@
 public class ZadM16 {
 
-    static void printInts(int[] t) {
-        for (int i = 0; i < t.length; i++)
-            System.out.print(t[i] + " ");
-        System.out.println();
-    }
-
     static int[] even(int[] t) {
         int i, j;
         for (i=j=0; i < t.length; i++)
@@ -14,6 +8,12 @@ public class ZadM16 {
         for (i=j=0; i < t.length; i++)
             if (t[i] % 2 == 0) r[j++] = t[i];
         return r;
+    }
+
+    static void printInts(int[] t) {
+        for (int i = 0; i < t.length; i++)
+            System.out.print(t[i] + " ");
+        System.out.println();
     }
 
     public static void main(String[] args) {

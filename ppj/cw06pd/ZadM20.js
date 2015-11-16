@@ -1,7 +1,3 @@
-function printInts(t) {
-    console.log(t.join(' '));
-}
-
 function eosort(t) {
 
     printInts(t);
@@ -13,6 +9,10 @@ function eosort(t) {
     printInts(r);
     console.log();
 
+}
+
+function printInts(t) {
+    console.log(t.join(' '));
 }
 
 var t = [[0,1,2,3,4,5,6,7,8,9],
