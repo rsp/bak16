@@ -18,7 +18,7 @@ public class ZadM07 {
 
     static void printInts(int[] t) {
         for (int i = 0; i < t.length; i++)
-            System.out.format("%3d", t[i]);
+            System.out.format("%d ", t[i]);
         System.out.println();
     }
 
