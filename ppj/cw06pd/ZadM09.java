@@ -2,10 +2,9 @@ public class ZadM09 {
 
     public static void main(String[] args) {
 
-        String[] t = {"ABC", "Ala ma kota", "To be or not to be"};
-        
-        for (int i = 0; i < t.length; i++)
-            System.out.format("%s -> %s\n", t[i], mirror(t[i]));
+        String s = "Ala ma kota";
+
+        System.out.format("%s -> %s\n", s, mirror(s));
 
     }
 
