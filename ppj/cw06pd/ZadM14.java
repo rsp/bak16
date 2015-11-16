@@ -23,7 +23,7 @@ public class ZadM14 {
     }
 
     static boolean test(char c) {
-        return (c+"").matches("\\d");
+        return c >= '0' && c <= '9';
     }
 
 }
