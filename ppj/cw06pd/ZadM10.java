@@ -2,7 +2,7 @@ public class ZadM10 {
 
     public static void main(String[] args) {
 
-        char[] t = {'a', ' ', ',', '-', 'x'};
+        char[] t = {'a', ' ', ',', '-', 'x', '\n'};
 
         for (int i = 0; i < t.length; i++)
             System.out.format("[%s] %s\n", t[i], test(t[i]));
