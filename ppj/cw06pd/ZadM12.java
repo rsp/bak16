@@ -1,7 +1,7 @@
 public class ZadM12 {
 
     static char randASCII() {
-        return (char)('a'+(Math.random()*('z'-'a'+1)));
+        return (char)('a'+Math.random()*('z'-'a'+1));
     }
 
      static char randMore() {
