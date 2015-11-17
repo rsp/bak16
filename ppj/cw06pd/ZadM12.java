@@ -5,16 +5,16 @@ public class ZadM12 {
     }
 
      static char randMore() {
-        int i = 0;
-        while (!Character.isLowerCase(i))
-            i = (int)(Math.random()*0x250);
+        int i;
+        do i = (int)(Math.random()*0x250);
+        while (!Character.isLowerCase(i));
         return (char)i;
     }
 
     static char randAll() {
-        int i = 0;
-        while (!Character.isLowerCase(i))
-            i = (int)(Math.random()*Character.MAX_VALUE);
+        int i;
+        do i = (int)(Math.random()*Character.MAX_VALUE);
+        while (!Character.isLowerCase(i));
         return (char)i;
     }
 
