@@ -1,11 +1,11 @@
 public class ZadM17 {
 
     static int[] even(int[] t) {
-        int i, j;
+        int j;
         j = countEven(t);
         int[] r = new int[j];
-        for (i=j=0; i < t.length; i++)
-            if (t[i] % 2 == 0) r[j++] = t[i];
+        j = 0;
+        for (int i:t) if (i%2==0) r[j++] = i;
         return r;
     }
 
