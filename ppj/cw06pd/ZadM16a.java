@@ -11,8 +11,8 @@ public class ZadM16a {
     }
 
     static void printInts(int[] t) {
-        for (int i = 0; i < t.length; i++)
-            System.out.print(t[i] + " ");
+        for (int i:t)
+            System.out.print(i + " ");
         System.out.println();
     }
 
