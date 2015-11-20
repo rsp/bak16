@@ -9,8 +9,8 @@ public class ZadM05 {
     }
 
     static void printInts(int[] t) {
-        for (int i = 0; i < t.length; i++)
-            System.out.format("%4d", t[i]);
+        for (int i:t)
+            System.out.format("%4d", i);
     }
 
     public static void main(String[] args) {
@@ -21,9 +21,9 @@ public class ZadM05 {
                       {100,0,0,0,50,0,0,0},
                       {100,100,100,100,100,500,500}};
 
-        for (int i = 0; i < tt.length; i++) {
-            printInts(tt[i]);
-            System.out.println("   suma = " + suma(tt[i]));
+        for (int[] t:tt) {
+            printInts(t);
+            System.out.println("   suma = " + suma(t));
         }
 
     }
