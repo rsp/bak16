@@ -1,10 +1,8 @@
 public class ZadM17 {
 
     static int[] even(int[] t) {
-        int j;
-        j = countEven(t);
-        int[] r = new int[j];
-        j = 0;
+        int j = 0;
+        int[] r = new int[countEven(t)];
         for (int i:t) if (i%2==0) r[j++] = i;
         return r;
     }
