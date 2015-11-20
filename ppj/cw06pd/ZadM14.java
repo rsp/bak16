@@ -14,14 +14,14 @@ public class ZadM14 {
 
     public static void main(String[] args) {
 
-        char[][] t = {{'1', 'a', '0', 'x', '9'},
-                      {'1', '2', '3', '4', '5', '6'},
-                      {'0', '0', '0', '0', '0', '0', '.'}};
+        char[][] tt = {{'1', 'a', '0', 'x', '9'},
+                       {'1', '2', '3', '4', '5', '6'},
+                       {'0', '0', '0', '0', '0', '0', '.'}};
 
-        for (int i = 0; i < t.length; i++) {
-            for (int j = 0; j < t[i].length; j++)
-                System.out.print(t[i][j]);
-            System.out.format(" %s\n", test(t[i]));
+        for (char[] t:tt) {
+            for (char c:t)
+                System.out.print(c);
+            System.out.format(" %s\n", test(t));
         }
 
     }
