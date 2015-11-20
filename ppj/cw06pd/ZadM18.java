@@ -16,8 +16,8 @@ public class ZadM18 {
                       "Zakopane nie na pokaz.",
                       "Aibofobia"};
 
-        for (int i = 0; i < t.length; i++)
-            System.out.format("\"%s\" %s\n", t[i], palindrom(t[i]));
+        for (String s:t)
+            System.out.format("\"%s\" %s\n", s, palindrom(s));
 
     }
 
