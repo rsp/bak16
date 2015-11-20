@@ -16,8 +16,8 @@ public class ZadM13 {
 
         char[] t = {'1', 'a', '0', '.', '9'};
 
-        for (int i = 0; i < t.length; i++)
-            System.out.format("[%s] %s\n", t[i], test3(t[i]));
+        for (char c:t)
+            System.out.format("[%s] %s\n", c, test3(c));
 
     }
 
