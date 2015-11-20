@@ -1,8 +1,8 @@
 public class ZadM03 {
 
     static void printInts(int[] t) {
-        for (int i = 0; i < t.length; i++)
-            System.out.format("%4d", t[i]);
+        for (int i:t)
+            System.out.format("%4d", i);
         System.out.println();
     }
 
