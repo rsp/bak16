@@ -1,9 +1,9 @@
 public class ZadM04 {
 
     static void printInts2D(int[][] t) {
-        for (int j = 0; j < t.length; j++) {
-            for (int i = 0; i < t[j].length; i++)
-                System.out.format("%4d", t[j][i]);
+        for (int[] j:t) {
+            for (int i:j)
+                System.out.format("%4d", i);
             System.out.println();
         }
     }
@@ -16,8 +16,8 @@ public class ZadM04 {
 
         int[][][] tt = {{t1, t2, t3}, {t3, t2}, {t2, t1}};
 
-        for (int i = 0; i < tt.length; i++) {
-            printInts2D(tt[i]);
+        for (int[][] t:tt) {
+            printInts2D(t);
             System.out.println();
         }
 
