@@ -8,9 +8,9 @@ public class ZadM11 {
 
         int[][] t = {{1,2}, {2,1}, {4,2}, {5,2}, {6,2}, {6,3}, {6,4}};
 
-        for (int i = 0; i < t.length; i++)
+        for (int[] i:t)
             System.out.format("%d, %d - %s\n",
-                t[i][0], t[i][1], test(t[i][0], t[i][1]));
+                i[0], i[1], test(i[0], i[1]));
 
     }
 
