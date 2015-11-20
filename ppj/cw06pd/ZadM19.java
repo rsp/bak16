@@ -12,8 +12,8 @@ public class ZadM19 {
         String[] t = {"Ala ma kota.",
                       "Ania lubi czerwone róże i niebieskie fiołki."};
 
-        for (int i = 0; i < t.length; i++)
-            System.out.format("\"%s\" %d\n", t[i], words(t[i]));
+        for (String s:t)
+            System.out.format("\"%s\" %d\n", s, words(s));
 
     }
 
