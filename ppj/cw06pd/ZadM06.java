@@ -8,10 +8,10 @@ public class ZadM06 {
 
         int[] t = {0,1,2,5,10,20};
 
-        for (int i = 0; i < t.length; i++) {
-            System.out.format("randMax(%d):", t[i]);
+        for (int i:t) {
+            System.out.format("randMax(%d):", i);
             for (int j = 0; j < 20; j++)
-                System.out.format(" %d", randMax(t[i]));
+                System.out.format(" %d", randMax(i));
             System.out.println();
         }
 
