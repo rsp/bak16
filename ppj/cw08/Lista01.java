@@ -41,8 +41,9 @@ public class Lista01 {
         System.out.println(ogniwo1.nastepne.nazwa);
 
         // ogniwo1.nastepne to ogniwo2 (bo takie tam zapisalismy)
-        // wiec ogniwo1.nastepne.nazwa to jakby (ogniwo1.nastepne).nazwa
-        // czyli ogniwo2.nazwa
+        // wiec ogniwo1.nastepne.nazwa to jakby
+        // (ogniwo1.nastepne).nazwa czyli:
+        //            ogniwo2.nazwa
 
         System.out.println("Jaka jest nazwa nastepnego po nastepnym po nr 1:");
         System.out.println(ogniwo1.nastepne.nastepne.nazwa);
@@ -50,10 +51,11 @@ public class Lista01 {
         // ogniwo1.nastepne to ogniwo2
         // ogniwo1.nastepne.nastepne to jakby (ogniwo1.nastepne).nastepne
         // czyli ogniwo2.nastepne a więc ogniwo3
+
         // więc:
-        // (ogniwo1.nastepne).nastepne.nazwa to:
-        // ogniwo2.nastepne.nazwa czyli:
-        // ogniwo3.nazwa
+        // ogniwo1.nastepne.nastepne.nazwa to:
+        //          ogniwo2.nastepne.nazwa czyli:
+        //                   ogniwo3.nazwa
 
         // Właściwie dlaczego łańcuch ma nie być zamknięty?
         System.out.println("Laczymy ogniwo 3 z pierwszym.");
