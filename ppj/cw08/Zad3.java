@@ -11,10 +11,10 @@ public class Zad3 {
         // double się nazywa double bo zajmuje w pamięci 2 razy tyle co float
         // i ma dzięki temu większą precyzję (więcej miejsc po przecinku)
 
-        // tworzymy obiekt klasy MethodCourier po to, żebyśmy mogli wywoływać metody:
-        MethodCourier m = new MethodCourier();
+        // tworzymy obiekt klasy Wyswietlacz po to, żebyśmy mogli wywoływać metody:
+        Wyswietlacz w = new Wyswietlacz();
 
-        // Obiekty klasy MethodCourier (zdefiniowanej niżej) mają
+        // Obiekty klasy Wyswietlacz (zdefiniowanej niżej) mają
         // dwie metody o tej samej nazwie ale o różnych typach argumentów (int i float).
 
         // To która wersja się uruchomi zależy od tego z jakim argumentem ją wywołamy.
@@ -30,33 +30,33 @@ public class Zad3 {
         // a następnie uruchomi się odpowiednia metoda dla int lub float:
         System.out.println("--- Automatyczne konwersje:");
 
-        System.out.print("wywolana metoda(int)\t");
-        m.setValue( i );
+        System.out.print("wywolane wyswietl(int) -> ");
+        w.wyswietl( i );
 
-        System.out.print("wywolana metoda(float)\t");
-        m.setValue( f );
+        System.out.print("wywolane wyswietl(float) -> ");
+        w.wyswietl( f );
 
-        System.out.print("wywolana metoda(char)\t");
-        m.setValue( c );
+        System.out.print("wywolane wyswietl(char) -> ");
+        w.wyswietl( c );
 
-        System.out.print("wywolana metoda(byte)\t");
-        m.setValue( b );
+        System.out.print("wywolane wyswietl(byte) -> ");
+        w.wyswietl( b );
 
         // To nie zadziała bo double nie można skonwertować do
         // ani int ani float bez potencjalnej straty precyzji:
-        // System.out.print("wywolana metoda(double)\t");
-        // m.setValue(d);
+        // System.out.print("wywolane wyswietl(double) -> ");
+        // w.wyswietl(d);
 
         // Można zrobić ręcznie konwersję z double do float
         // ze stratą precyzji:
         System.out.println("--- Ręczne konwersje:");
-        System.out.print("wywolana metoda((float)double)\t");
-        m.setValue( (float)d );
+        System.out.print("wywolane wyswietl((float)double) -> ");
+        w.wyswietl( (float)d );
 
         // Można też zrobić ręcznie konwersję z double do int:
         // z jeszcze większą stratą precyzji:
-        System.out.print("wywolana metoda((int)double)\t");
-        m.setValue( (int)d );
+        System.out.print("wywolane wyswietl((int)double) -> ");
+        w.wyswietl( (int)d );
 
         // To jest nasza wartość double bez konwersji i bez utraty precyzji:
         System.out.println("--- Oryginalna wartość double:");
@@ -65,16 +65,16 @@ public class Zad3 {
     }
 }
 
-class MethodCourier {
+class Wyswietlacz {
 
-    // metoda setValue w wersji obsługującej argument typu int:
-    void setValue (int n) {
-        System.out.println("wybrana metoda(int):\t" + n);
+    // metoda wyswietl w wersji obsługującej argument typu int:
+    void wyswietl (int n) {
+        System.out.println("zadzialalo wyswietl(int): " + n);
     }
 
-    // metoda setValue w wersji obsługującej argument typu float:
-    void setValue (float n) {
-        System.out.println("wybrana metoda(float):\t" + n);
+    // metoda wyswietl w wersji obsługującej argument typu float:
+    void wyswietl (float n) {
+        System.out.println("zadzialalo wyswietl(float): " + n);
     }
 
 }
