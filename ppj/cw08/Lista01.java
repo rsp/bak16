@@ -1,6 +1,8 @@
 class Ogniwo {
+
     public Ogniwo nastepne;
     public String nazwa;
+
 }
 
 public class Lista01 {
