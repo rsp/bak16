@@ -1,4 +1,4 @@
-public class Zad1 {
+public class Zad01 {
 
     static int fib(int n) {
         return n <= 2 ? n : fib(n-1) + fib(n-2);
