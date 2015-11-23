@@ -16,12 +16,13 @@ public class Zad3 {
 
         // Obiekty klasy MethodCourier (zdefiniowanej niżej) mają
         // dwie metody o tej samej nazwie ale o różnych typach argumentów (int i float).
+
         // To która wersja się uruchomi zależy od tego z jakim argumentem ją wywołamy.
         // Jeśli wywołamy z argumentem int to uruchomi się wersja int.
-        // Jeśli wywołamy z argumentem int to uruchomi się wersja z int;
+        // Jeśli wywołamy z argumentem float to uruchomi się wersja float.
         // Jeśli wywołamy z czymś innym niż int lub float (np. byte albo double)
-        // to wtedy Java spróbuje czy ten nasz typ da się zamienić bez straty na
-        // jeden z typow obsługiwanych przez nasze metody (czyli na int lub float)
+        // to wtedy Java sprawdzi czy ten nasz typ da się zamienić bez straty na
+        // jeden z typów obsługiwanych przez nasze metody (czyli na int lub float)
         // i jeśli się da to uruchomi odpowiednią wersję metody a jeśli się nie da
         // to będziemy mieli błąd o potencjalnej utracie precyzji.
 
@@ -46,14 +47,18 @@ public class Zad3 {
         // System.out.print("wywolana metoda(double)\t");
         // m.setValue(d);
 
-        // Można zrobić ręcznie konwersję z double do float:
+        // Można zrobić ręcznie konwersję z double do float
+        // ze stratą precyzji:
         System.out.println("--- Ręczne konwersje:");
-        System.out.print("wywolana metoda((float)double)\t"); m.setValue( (float)d );
+        System.out.print("wywolana metoda((float)double)\t");
+        m.setValue( (float)d );
 
         // Można też zrobić ręcznie konwersję z double do int:
-        System.out.print("wywolana metoda((int)double)\t"); m.setValue( (int)d );
+        // z jeszcze większą stratą precyzji:
+        System.out.print("wywolana metoda((int)double)\t");
+        m.setValue( (int)d );
 
-        // To jest double bez konwersji i bez utraty precyzji:
+        // To jest nasza wartość double bez konwersji i bez utraty precyzji:
         System.out.println("--- Oryginalna wartość double:");
         System.out.println("double:\t" + d);
 
