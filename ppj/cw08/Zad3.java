@@ -2,11 +2,11 @@ public class Zad3 {
 
     public static void main(String[] args) {
 
-        int    i = 10;
-        float  f = 10;
-        char   c = 10;
-        byte   b = 10;
-        double d = 10;
+        int    i = 10000;
+        float  f = 1.11111111111111111111f;
+        char   c = 1000;
+        byte   b = 100;
+        double d = 2.22222222222222222222;
 
         MethodCourier m = new MethodCourier();
 
