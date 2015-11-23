@@ -1,7 +1,9 @@
 class Ogniwo {
 
-    public Ogniwo nastepne;
+    // każde odniwo może mieć jakąś nazwę:
     public String nazwa;
+    // oraz mieć połączenie z następnym ogniwem w łańcuchu:
+    public Ogniwo nastepne;
 
 }
 
