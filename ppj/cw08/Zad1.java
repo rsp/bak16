@@ -26,9 +26,8 @@ public class Zad1 {
 
     public static void main(String[] args) {
 
-        int n = 2;
-        for (int i = 0; i < 20; i++)
-            System.out.format( "%3d %5d\n", i, fib(i) );
+        for (int i = 1; i < 20; i++)
+            System.out.format( "%3d: %5d\n", i, fib(i) );
 
     }
 
@@ -37,7 +36,7 @@ public class Zad1 {
     // a potem co ma wyswietlić - np. a, b
 
     // "%3d" oznacza liczbę dziesiętną (d) na szerokość 3 znaków
-    // spacja to spacja
+    // dwukropek i spacja to dwukropek i spacja wyświetlone normalnie
     // "%5d" oznacza liczbę dziesiętną (d) na szerokość 5 znaków
     // "\n" to znak nowej linnii - jak System.out.println();
 
@@ -46,6 +45,6 @@ public class Zad1 {
 
         // int n = 2;
         // for (int i = 0; i < 20; i++)
-        //     System.out.println( i + " " + fib(i) );
+        //     System.out.println( i + ": " + fib(i) );
 
 }
