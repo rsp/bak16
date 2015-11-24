@@ -8,7 +8,7 @@ public class Zad01a {
     public static void main(String[] args) {
 
         for (int i = 1; i <= 50; i++)
-            System.out.format( "%3d: %5d\n", i, fib(i) );
+            System.out.format( "%3d:%12d\n", i, fib(i) );
 
     }
 
