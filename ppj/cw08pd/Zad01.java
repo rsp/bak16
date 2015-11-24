@@ -1,6 +1,10 @@
 public class Zad01 {
 
     // silnia - rekurencyjnie:
+
+    // dla n = 0 zwraca 1
+    // dla pozostałych n zwraca n * silnia z n-1
+
     static long silnia1(int n) {
 
         if (n == 0)
@@ -11,6 +15,9 @@ public class Zad01 {
     }
 
     // silnia - iteracyjnie:
+
+    // mnoży w pętli po kolei wszystkie liczby od 1 do n
+
     static long silnia2(int n) {
 
         long s = 1;
@@ -21,7 +28,12 @@ public class Zad01 {
 
     }
 
-    // silnia - rekurencyjnie ale trochę inaczej:
+    // silnia - rekurencyjnie ale trochę inaczej bo działa jak pętla:
+
+    // wywołuje swoją drugą wersje z dwoma argumentami a i n
+    // a to wynik dotychczas pomnożonych liczb (na początku 1)
+    // a jest kolejno mnożone przez n a n zmniejszane o 1
+
     static long silnia3(int n) {
 
         return silnia3(1, n);
