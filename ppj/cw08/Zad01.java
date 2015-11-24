@@ -26,7 +26,7 @@ public class Zad01 {
 
     public static void main(String[] args) {
 
-        for (int i = 1; i < 20; i++)
+        for (int i = 1; i <= 20; i++)
             System.out.format( "%3d: %5d\n", i, fib(i) );
 
     }
