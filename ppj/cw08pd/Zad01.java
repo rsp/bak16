@@ -50,12 +50,15 @@ public class Zad01 {
 
     public static void main(String[] args) {
 
+        System.out.println("--------- fun1 ---------");
         for (int i = 0; i <= 20; i++)
             System.out.format( "%3d:%20d\n", i, fun1(i) );
 
+        System.out.println("--------- fun2 ---------");
         for (int i = 0; i <= 20; i++)
             System.out.format( "%3d:%20d\n", i, fun2(i) );
 
+        System.out.println("--------- fun3 ---------");
         for (int i = 0; i <= 20; i++)
             System.out.format( "%3d:%20d\n", i, fun3(i) );
 
