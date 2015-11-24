@@ -53,19 +53,19 @@ public class Zad03 {
         int m = 3;
         double a0 = 100, q = 1.1;
 
-        System.out.println("fun1:");
+        System.out.println("---- fun1 ---");
         for (int i = 0; i <= m; i++)
             System.out.format( "%3d:%9.3f\n", i, fun1(a0, q, i) );
 
-        System.out.println("fun2:");
+        System.out.println("---- fun2 ---");
         for (int i = 0; i <= m; i++)
             System.out.format( "%3d:%9.3f\n", i, fun2(a0, q, i) );
 
-        System.out.println("fun3:");
+        System.out.println("---- fun3 ---");
         for (int i = 0; i <= m; i++)
             System.out.format( "%3d:%9.3f\n", i, fun3(a0, q, i) );
 
-        System.out.println("fun4:");
+        System.out.println("---- fun4 ---");
         for (int i = 0; i <= m; i++)
             System.out.format( "%3d:%9.3f\n", i, fun4(a0, q, i) );
 
