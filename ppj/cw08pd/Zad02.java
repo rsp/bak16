@@ -1,6 +1,6 @@
 public class Zad02 {
 
-    // element ciagu - rekurencyjnie:
+    // element ciagu arytmetycznego - rekurencyjnie:
 
     static int fun1(int a0, int r, int n) {
 
@@ -11,7 +11,7 @@ public class Zad02 {
 
     }
 
-    // element ciagu - iteracyjnie:
+    // element ciagu arytmetycznego - iteracyjnie:
 
     static int fun2(int a0, int r, int n) {
 
@@ -23,7 +23,7 @@ public class Zad02 {
 
     }
 
-    // element ciagu - rekurencyjnie ale jak pętla:
+    // element ciagu arytmetycznego - rekurencyjnie ale jak pętla:
 
     static int fun3(int a0, int r, int n) {
 
@@ -39,7 +39,7 @@ public class Zad02 {
 
     }
 
-    // element ciagu - bez rekurencji ani iteracji
+    // element ciagu arytmetycznego - bez rekurencji ani iteracji
     // do zweryfikowania pozostałych funkcji:
 
     static int fun4(int a0, int r, int n) {
