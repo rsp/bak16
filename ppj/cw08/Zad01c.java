@@ -1,6 +1,6 @@
 public class Zad01c {
 
-    static long fib(long n) {
+    static long fib(int n) {
 
         if (n <= 2)
             return n;
