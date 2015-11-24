@@ -5,12 +5,12 @@ public class Zad01 {
     // dla n = 0 zwraca 1
     // dla pozostałych n zwraca n * silnia z n-1
 
-    static long silnia1(int n) {
+    static long fun1(int n) {
 
         if (n == 0)
             return 1;
         else
-            return n * silnia1(n-1);
+            return n * fun1(n-1);
 
     }
 
@@ -18,7 +18,7 @@ public class Zad01 {
 
     // mnoży w pętli po kolei wszystkie liczby od 1 do n
 
-    static long silnia2(int n) {
+    static long fun2(int n) {
 
         long s = 1;
         for (int j = 1; j <= n; j++)
@@ -34,30 +34,30 @@ public class Zad01 {
     // a to wynik dotychczas pomnożonych liczb (na początku 1)
     // a jest kolejno mnożone przez n a n zmniejszane o 1
 
-    static long silnia3(int n) {
+    static long fun3(int n) {
 
-        return silnia3(1, n);
+        return fun3(1, n);
 
     }
-    static long silnia3(long a, int n) {
+    static long fun3(long a, int n) {
 
         if (n < 2)
             return a;
         else
-            return silnia3(a*n, n-1);
+            return fun3(a*n, n-1);
 
     }
 
     public static void main(String[] args) {
 
         for (int i = 0; i <= 20; i++)
-            System.out.format( "%3d:%20d\n", i, silnia1(i) );
+            System.out.format( "%3d:%20d\n", i, fun1(i) );
 
         for (int i = 0; i <= 20; i++)
-            System.out.format( "%3d:%20d\n", i, silnia2(i) );
+            System.out.format( "%3d:%20d\n", i, fun2(i) );
 
         for (int i = 0; i <= 20; i++)
-            System.out.format( "%3d:%20d\n", i, silnia3(i) );
+            System.out.format( "%3d:%20d\n", i, fun3(i) );
 
     }
 
