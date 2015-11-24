@@ -52,19 +52,19 @@ public class Zad02 {
 
         int a0 = 10, r = 2, m = 3;
 
-        System.out.println("fun1:");
+        System.out.println("--------- fun1 ---------");
         for (int i = 0; i <= m; i++)
             System.out.format( "%3d:%20d\n", i, fun1(a0, r, i) );
 
-        System.out.println("fun2:");
+        System.out.println("--------- fun2 ---------");
         for (int i = 0; i <= m; i++)
             System.out.format( "%3d:%20d\n", i, fun2(a0, r, i) );
 
-        System.out.println("fun3:");
+        System.out.println("--------- fun3 ---------");
         for (int i = 0; i <= m; i++)
             System.out.format( "%3d:%20d\n", i, fun3(a0, r, i) );
 
-        System.out.println("fun4:");
+        System.out.println("--------- fun4 ---------");
         for (int i = 0; i <= m; i++)
             System.out.format( "%3d:%20d\n", i, fun4(a0, r, i) );
 
