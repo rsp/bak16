@@ -2,6 +2,7 @@ public class Getter01 {
 
     public static void main(String[] args) {
 
+        // nowy obiekt klasy Klasa:
         Klasa obiekt = new Klasa();
 
         // to nie zadziała - bo zmienna jest prywatna:
