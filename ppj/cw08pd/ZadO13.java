@@ -44,7 +44,6 @@ class Point {
         System.out.format("(%f, %f)-(%f, %f) distance: %f\n", p1.x, p1.y, p2.x, p2.y, getDistance(p1, p2));
     }
 
-
 }
 
 public class ZadO13 {
