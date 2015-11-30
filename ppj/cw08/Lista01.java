@@ -111,7 +111,7 @@ public class Lista01 {
         System.out.println("Jakie jest teraz piate ogniwo:");
         System.out.println(ogniwo1.nastepne.nastepne.nastepne.nastepne.nazwa);
 
-        // Teraz usuwamy drugie ogniwo z łańcucha.
+        System.out.println("Teraz usuwamy drugie ogniwo z łańcucha.");
         // Wcześniej to drugie było zapisane jako "nastepne" w pierwszym
         // ale jak usuniemy to ogniwo to chcemy, żeby następnym dla pierwszego
         // stało się to jeszcze o jedno dalej:
