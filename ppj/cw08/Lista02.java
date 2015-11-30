@@ -10,20 +10,31 @@ class Ogniwo {
     // zmienna "nastepne" typu Ogniwo:
     private Ogniwo nastepne;
 
+    // metody obiektów klasy Ogniwo:
+
+    // to jest setter bo zmienia nazwę:
     void zmienNazwe(String nowaNazwa) {
         this.nazwa = nowaNazwa;
     }
 
+    // to jest getter bo podaje nazwę:
     String podajNazwe() {
         return this.nazwa;
     }
 
+    // to jest setter dla następnego ogniwa:
     void setNastepne(Ogniwo noweNastepne) {
         this.nastepne = noweNastepne;
     }
 
+    // to jest getter dla następnego ogniwa:
     Ogniwo getNastepne() {
         return this.nastepne;
+    }
+
+    // to jest metoda, która usuwa kolejne ogniwo:
+    void usunNastepne() {
+        this.setNastepne( this.getNastepne().getNastepne() );
     }
 
 }
@@ -131,7 +142,7 @@ public class Lista02 {
         // Wcześniej to drugie było zapisane jako "nastepne" w pierwszym
         // ale jak usuniemy to ogniwo to chcemy, żeby następnym dla pierwszego
         // stało się to jeszcze o jedno dalej:
-        ogniwo1.setNastepne( ogniwo1.getNastepne().getNastepne() );
+        ogniwo1.usunNastepne();
 
         // Teraz jaka jest nazwa nastepnego po pierwszym:
         System.out.println("Jaka jest nazwa ogniwa nastepnego po nr 1:");
