@@ -17,7 +17,7 @@ class Point {
     }
 
     void print() {
-        System.out.format("(%f, %f)\n", this.x, this.y);
+        System.out.format("(%f, %f)\n", x, y);
     }
 
 }
