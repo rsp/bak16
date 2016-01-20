@@ -15,7 +15,7 @@ public class Zad3 {
 			b.append((char)c);
 		}
 
-		int bc = 0, ob = 0;
+		int ob = 0;
 		Matcher bm = Pattern.compile("[\\[\\]]").matcher(b);
 		while (bm.find()) {
 			if (bm.group().equals("[")) ob++;
