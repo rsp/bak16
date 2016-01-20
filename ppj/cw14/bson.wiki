@@ -1,0 +1,60 @@
+'''BSON''' {{IPAc-en|ˈ|b|iː|s|ɒ|n}} is a [[computer]] data interchange format used mainly as a data storage and network transfer format in the [[MongoDB]] database. It is a binary form for representing simple [[data structure]]s and [[associative array]]s (called objects or documents in MongoDB).  The name "BSON" is based on the term [[JSON]] and stands for "Binary JSON".<ref  name="bsonspec">[http://bsonspec.org BSON Specification]</ref>
+
+==Data types and syntax==
+BSON documents (objects) consist of an ordered list of ''elements''.  Each element consists of a field name, a type, and a value.  Field names are strings.  Types include:
+
+* string
+* integer (32- or 64-bit)
+* double (64-bit [[IEEE 754]] floating point number)
+* date (integer number of milliseconds since the [[Unix epoch]])
+* byte array (binary data)
+* [[boolean datatype|boolean]] (<code>true</code> and <code>false</code>)
+* [[Nullable type|null]]
+* BSON object
+* BSON array
+
+
+BSON types are nominally a superset of [[JSON]] types (JSON does not have a date or a byte array type, for example<ref name="json">[http://www.json.org/ JSON Specification]</ref>), with one exception of not having a universal "number" type as JSON does.
+
+==Efficiency==
+Compared to JSON, BSON is designed to be efficient both in storage space and scan-speed.  Large elements in a BSON document are prefixed with a length field to facilitate scanning. In some cases, BSON will use more space than JSON due to the length prefixes and explicit array indices.<ref name="bsonspec"/>
+
+== Example == 
+A document such as {"hello":"world"} will be stored as: 
+
+<source lang="c">
+
+Bson:
+  \x16\x00\x00\x00               // total document size
+  \x02                           // 0x02 = type String
+  hello\x00                      // field name
+  \x06\x00\x00\x00world\x00      // field value (size of value, value, null terminator)
+  \x00                           // 0x00 = type EOO ('end of object')
+</source>
+
+== See also ==
+* [[JSON]]
+* [[Smile (Data Interchange Format)|Smile]] (binary JSON)
+* [[UBJSON]]
+* [[Protocol Buffers]]
+* [[Action Message Format]]
+* [[Apache Thrift]]
+* [[MessagePack]]
+* [[Document-oriented database]]
+** [[MongoDB]]
+* [[Abstract Syntax Notation One]] (ASN.1)
+* [[Wireless Binary XML]] (WBXML)
+* [[Efficient XML Interchange]]
+* [https://github.com/Sereal/Sereal Sereal]
+
+==References==
+{{Reflist}}
+
+== External links ==
+* [http://bsonspec.org/ BSON Specification]
+* [http://www.mongodb.org/display/DOCS/BSON BSON documentation on the MongoDB website]
+* [http://docs.mongodb.org/manual/reference/bsondump/ <tt>bsondump</tt> tool included with MongoDB]
+
+[[Category:JSON]]
+[[Category:Data serialization formats]]
+[[Category:Document-oriented databases]]
