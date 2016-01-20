@@ -1,0 +1,53 @@
+Pochodna Brzozowskiego
+
+W teorii języków formalnych w informatyce pochodna Brzozowskiego u−1S zbioru ciągów znaków S względem ciągu znaków u jest zdefiniowana jako zbiór ciągów znaków otrzymanych z elementów zbioru S poprzez usunięcie prefiksu u (jeśli istnieje), formalnie u−1S = { v ∈ Σ*: uv ∈ S }, jak na rysunku. Nazwa pochodnych Brzozowskiego pochodzi od nazwiska informatyka Janusza Brzozowskiego, który badał ich właściwości i opracował algorytm liczący pochodne uogólnionych wyrażeń regularnych.
+
+Pochodna wyrażenia regularnego
+
+Mając skończony alfabet A symboli uogólnione wyrażenie regularne oznacza potencjalnie nieskończony zbiór ciągów znaków skończonej długości złożonych z symboli z alfabetu A. Zbiór ten może mieć postać:
+
+∅ (pusty zbiór ciągów znaków)
+ε (jednoelementowy zbiór zawierający tylko pusty ciąg znaków)
+symbol a ze zbioru A (co oznacza jednoelementowy zbiór zawierający ciąg znaków składający się z jednego symbolu a)
+R∨S (unia zbiorów R i S, gdzie R i S są uogólnionymi wyrażeniami regularnymi)
+R∧S (część wspólna zbiorów R i S)
+¬R (dopełnienie zbioru R względem wszystkich ciągów znaków złożonych z symboli alfabetu A)
+RS (zbiór wszystkich możliwych złączeń ciągów znaków ze zbiorów R i S)
+R* (zbiór n-krotnych powtórzeń ciągów znaków ze zbioru R i S, dla dowolnego n≥0, włącznie z pustym ciągiem znaków)
+W zwykłym wyrażeniu regularnym ∧ ani ¬ nie jest dozwolone. Zbiór ciągów znaków oznaczony przez uogólnione wyrażenie regularne R nazywany jest jego językiem i oznacza się go jako L(R).
+
+Jako funkcja pomocnicza δ(R) zwraca pusty łańcuch ε jeśli język odpowiadający R zawiera ε, w przeciwnym razie δ(R) zwraca ∅. Funkcja ta może być obliczona za pomocą następujących reguł:
+
+δ(ε)    = ε
+δ(∅)    = ∅
+δ(R*)   = ε
+δ(RS)   = δ(R) ∧ δ(S)
+δ(R ∧ S)    = δ(R) ∧ δ(S)
+δ(R ∨ S)    = δ(R) ∨ δ(S)
+δ(¬R)   = ε jeśli δ(R) = ∅
+δ(¬R)   = ∅ jeśli δ(R) = ε
+
+W oparciu o to, pochodna uogólnionego wyrażenia regularnego względem jednoelementowego ciągu znaków a może być obliczona w następujący sposób:
+
+a−1a    = ε
+a−1b    = ∅ dla każdego symbolu b≠a
+a−1ε    = ∅
+a−1∅    = ∅
+a−1(R*) = a−1RR*
+a−1(RS) = (a−1R)S ∨ δ(R)a−1S
+a−1(R∧S)    = (a−1R) ∧ (a−1S)
+a−1(R∨S)    = (a−1R) ∨ (a−1S)
+a−1(¬R) = ¬(a−1R)
+
+Dla symbolu a, dowolnego łańcucha u i uogólnionego wyrażenia regularnego R pochodna (ua)−1R może być obliczona rekursywnie jako a−1(u−1R); i ε−1R jest równe R. w ten sposób dla danego uogólnionego wyrażenia regularnego R i łańcucha u, pochodna u−1R może być obliczona jako kolejne uogólnione wyrażenie regularne.
+
+Właściwości
+
+Łańcuch u należy do zbioru określonego przez uogólnione wyrażenie regularne R wtedy i tylko wtedy gdy ε należy do zbioru ciągów znaków określonego przez pochodną u−1R.
+
+Rozważając wszystkie pochodne uogólnionego wyrażenia regularnego R stałej długości otrzymuje się skończenie wiele różnych języków. Jeśli ich liczba określona jest przez dR, wszystkie te języki można otrzymać jako pochodne R względem ciągu znaków długości mniejszej niż dR. Ponadto istnieje kompletny deterministyczny automat skończony o liczbie stanów dR rozpoznający język regularny określony przez R, zgodnie z twierdzeniem Myhilla-Nerode’a.
+
+Kategoria: Języki formalne
+
+Test: 1 2 3 4 5 101 102 103 104 105 106 107 108 109 110
+Test: Lala nagana
