@@ -8,7 +8,7 @@ public class Zad3 {
 	public static void main(String[] args) throws Exception {
 
 		StringBuffer b = new StringBuffer();
-		FileReader r = new FileReader(new File("bson.wiki"));
+		FileReader r = new FileReader(new File("bson-wiki.txt"));
 
 		int c;
 		while ((c = r.read()) > -1) {
